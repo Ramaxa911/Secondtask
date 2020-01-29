@@ -9,62 +9,79 @@
 <body>
     <nav>
         <a href="index.html"> Go back to main page</a>
-        <h3>What kind of smartphon do u use? </h3>
     </nav>
     <section>
-        <form method="" action="">
+        <form method="POST" action="https://formspree.io/mpzdzrgw">
+            <h3>What kind of smartphon do u use?* </h3>
             <label>Samsung
-                <input type="radio" name="brand">
+                <input type="radio" name="brand" value="Samsung" required name="brand">
             </label>
             <label>Motorola
-                <input type="radio" name="brand">
+                <input type="radio" name="brand" value="Samsung">
             </label>
             <label>Iphone
-                <input type="radio" name="brand">
+                <input type="radio" name="brand" value="Samsung">
             </label>
             <label>Sony
-                <input type="radio" name="brand"> <br>
+                <input type="radio" name="brand" value="Samsung"> <br>
             </label>
         <!-- Next qestion: How old are you ? -->
-            <h3>How old are you ?</h3>
-            <label>less 10
-                <input type="radio" name="brand">
+            <h3>How old are you ?*</h3>
+            <label>less 13
+                <input type="radio" name="Old" value="less10" required name="Old">
             </label>
-            <label>10-20
-                <input type="radio" name="brand">
+            <label>13-18
+                <input type="radio" name="Old" value="10-20" >
             </label>
-            <label>20-40
-                <input type="radio" name="brand">
+            <label>18-40
+                <input type="radio" name="Old" value="20-40">
             </label>
             <label>40+
-                <input type="radio" name="brand"> <br>
+                <input type="radio" name="Old" value="40+"> <br>
             </label> 
         <!-- Next qestion: Your Gender -->
-            <h3>Your Gender</h3>
+            <h3>Your Gender*</h3>
             <label>Male
-                <input type="radio" name="brand">
+                <input type="radio" name="gender" value="male" required name="gender">
             </label>
             <label>Female
-                <input type="radio" name="brand">
+                <input type="radio" name="gender" value="female">
             </label>
             <label>Other
-                <input type="radio" name="brand">
+                <input type="radio" name="gender" value="other">
             </label>
         <!-- Next qestion -->
-            <h3>How old are you ?</h3>
-            <label>Samsung
-                <input type="radio" name="brand">
+            <h3>Where do u live ?*</h3>
+            <label>Europe
+                <input type="radio" name="live" value="Europe" required name="live">
             </label>
-            <label>Motorola
-                <input type="radio" name="brand">
+            <label>USA
+                <input type="radio" name="live" value="Usa">
             </label>
-            <label>Iphone
-                <input type="radio" name="brand">
+            <label>Azia
+                <input type="radio" name="live" value="Azia">
             </label>
-            <label>Sony
-                <input type="radio" name="brand"> <br>
+            <label>Other
+                <input type="radio" name="live" value="Other">
             </label>
+            <br>
+            <br>
+        <!-- Comments -->
+            <p>Comments:<Br>
+                <textarea name="comment" cols="40" rows="3"></textarea></p>
+            <p>
+            <label>Email:*
+                <input type="Email" placeholder="Email" name="Email"  required name="Email">
+            </label>
+            <label>Name:*
+                <input type="text" name="Name" placeholder="Name"  required name="Name">
+            </label> 
+            <br> 
+            <br>
+            <input type="submit">
+            <input type="reset">
 
+        </form>
     </section>
 </body>
 </html>
